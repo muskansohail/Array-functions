@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        //Functions
+        //   without parameters
+        //   with parameters
+  
+        //without parameters
+        function greetings() {
+          document.write("Welcome in lab 104");
+          document.write("</br>");
+        }
+  
+        //   greetings();
+        //   greetings();
+        //   greetings();
+  
+        //with parameters
+        function welcome(myname) {
+          document.write("Welcome : ", myname);
+          document.write("<br>");
+        }
+  
+        //   welcome("Tanzeel");
+        //   welcome("Faizan");
+  
+        // Create a function that accepts two parameters
+        //  and show result after addition of these parameters.
+  
+        function add(value1, value2) {
+          document.write(value1 + value2);
+        }
+  
+        //   add(50, 80);
+  
+        //   fruit-full function
+        //   fruit-less function
+  
+        //   fruit-full function
+        function calculate(value1, value2) {
+          return value1 + value2;
+        }
+  
+        let answer = calculate(20, 50);
+        //   document.write(answer);
+  
+        //Arrow function
+  
+        //   -> arrow operator
+        //   => fat arrow operator
+  
+        //   () => {}
+  
+        //   const myArrow = () => {
+        //     return "Arrow Function";
+        //   };
+  
+        const myArrow = () => "this is short arrow function";
+        //   document.write(myArrow());
+  
+        let addition = (a, b) => a + b;
+        //   document.write(addition(100, 50));
+  
+        // callback function
+  
+        function getValue(myfunct) {
+          let myValue = "Hello World";
+          myfunct(myValue); // alag function
+        }
+  
+        function printValue(value) {
+          document.write(value);
+          document.write("<br>");
+        }
+  
+        //getValue(printValue); //alag function
+  
+        function get_add(val1, val2, myfunc) {
+          let res = val1 + val2;
+          myfunc(res);
+        }
+  
+        function print_result(myvalue2) {
+          document.write(myvalue2);
+        }
+  
+        get_add(10, 20, print_result);
+  
+        // pop
+        // push
+        // sort
+        // concat
+        // join
+        
+        //    ----- ye sab callback kay sath use huty heen ------
+        // find
+        // filter
+        // map
+        // foreach
+      </script>
+</body>
+</html>
